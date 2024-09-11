@@ -32,18 +32,31 @@ const ProductList = () => {
   return (
     <div className="moving-background"> {/* Apply the moving background */}
       <Box style={{ padding: '20px' }}>
-      <Box display="flex" justifyContent="space-between" alignItems="center" marginBottom="20px">
-  <Typography variant="h4" className="products-header">
-    Our Products
-  </Typography>
-  <TextField
-    label="Search by Product Name"
-    variant="outlined"
-    size="small"
-    value={searchQuery}
-    onChange={(e) => setSearchQuery(e.target.value)}
-  />
-</Box>
+        <Box display="flex" justifyContent="space-between" alignItems="center" marginBottom="10px">
+          <Typography variant="h4" className="products-header">
+            Our Products
+          </Typography>
+          <Button
+            className="add-product-button"
+            variant="contained"
+            component={Link}
+            to="/add"
+            style={{ height: '40px' }} // Button moved to the top
+          >
+            Add New Product
+          </Button>
+        </Box>
+
+        <Box display="flex" justifyContent="flex-end" alignItems="center" marginBottom="20px">
+          <TextField
+            label="Search by Product Name"
+            variant="outlined"
+            size="small"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            style={{ width: '300px' }} // Optional: Adjust width of the search bar
+          />
+        </Box>
 
         <Grid container spacing={3}>
           {products.map(product => (
@@ -77,15 +90,6 @@ const ProductList = () => {
             </Grid>
           ))}
         </Grid>
-        <Button
-  className="add-product-button"
-  variant="contained"
-  component={Link}
-  to="/add"
->
-  Add New Product
-</Button>
-
         <ToastContainer />
       </Box>
     </div>

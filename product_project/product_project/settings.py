@@ -57,7 +57,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  
 ]
-ALLOWED_HOSTS = ['anin98.pythonanywhere.com']
+# ALLOWED_HOSTS = ['anin98.pythonanywhere.com']
 
 
 ROOT_URLCONF = 'product_project.urls'

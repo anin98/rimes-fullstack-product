@@ -1,6 +1,6 @@
 /* Background Animation */
 .moving-background {
-    background: linear-gradient(-45deg, #102542, #F87060, #CDD7D6, #B3A394, #FFFFFF);
+    background: linear-gradient(-45deg, #2c497087, #5d8f9d5d, #d8eeec53, #b3a3945f, #ffffff82);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
@@ -11,7 +11,7 @@
 
 /* Styling for the header to make it stand out */
 .products-header {
-    font-size: 2.5rem;
+    font-size: 3.0rem !important;
     font-weight: bolder;
     color: #314d69;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -38,7 +38,7 @@
     overflow: hidden !important;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important; /* Stronger shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-    background: rgba(255, 255, 255, 0.15) !important; /* Semi-transparent white background */
+    background: rgba(244, 237, 237, 0.818) !important; /* Semi-transparent white background */
     backdrop-filter: blur(8px) !important; /* Adds a glassmorphism effect */
     display: flex !important;
     flex-direction: column !important;
@@ -49,7 +49,7 @@
 
 .product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    box-shadow: 0 12px 24px rgba(139, 135, 135, 0.3); /* Enhanced shadow on hover */
 }
 
 /* Card Content */
@@ -60,12 +60,12 @@
 /* Typography */
 .card-title {
     font-weight: bolder !important;
-    color: #251e1e; /* Light color for better contrast */
+    color: #3D3F3D; /* Light color for better contrast */
     font-size: 2.0rem !important;
 }
 
 .card-description {
-    color: #1f0808;
+    color: #595959;
     margin: 10px 0;
     line-height: 1.6;
 }
