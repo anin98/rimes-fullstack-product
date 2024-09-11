@@ -1,0 +1,83 @@
+/* Background Animation */
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #FCDEBE, #D4D2A5, #928779, #5E5768, #3A445D);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+  }
+  
+  /* Keyframes for Background Animation */
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  
+  
+  /* Styling for the form container */
+ /* UpdateProduct.css */
+
+/* Container for the form specific to UpdateProduct */
+.update-form-container {
+    padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.15); /* Adjusted for better readability */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow for emphasis */
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Header for the form specific to UpdateProduct */
+  .update-form-header {
+    font-size: 2.5rem;
+    color: #352929; /* Dark text color for contrast */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700; /* Bold font */
+  }
+  
+  /* Style for the form specific to UpdateProduct */
+  .update-product-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-product-form div {
+    margin-bottom: 15px;
+  }
+  
+  .update-product-form label {
+    font-weight: bold;
+  }
+  
+  .update-product-form input,
+  .update-product-form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .update-product-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .update-product-form button:hover {
+    background-color: #45a049;
+  }
+  

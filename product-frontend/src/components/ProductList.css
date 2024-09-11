@@ -1,0 +1,117 @@
+/* Background Animation */
+.moving-background {
+    background: linear-gradient(-45deg, #102542, #F87060, #CDD7D6, #B3A394, #FFFFFF);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styling for the header to make it stand out */
+.products-header {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #314d69;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Product Card */
+.product-card {
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important; /* Stronger shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    background: rgba(255, 255, 255, 0.15) !important; /* Semi-transparent white background */
+    backdrop-filter: blur(8px) !important; /* Adds a glassmorphism effect */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+     /* Light border to define card */
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+}
+
+/* Typography */
+.card-title {
+    font-weight: bolder !important;
+    color: #251e1e; /* Light color for better contrast */
+    font-size: 2.0rem !important;
+}
+
+.card-description {
+    color: #1f0808;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.card-price {
+    font-weight:400 !important;
+    color: #dd092c; /* Distinct color for price */
+    font-size: 3.3rem;
+}
+
+/* Button Styles */
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.product-button, .delete-button {
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.product-button {
+    background-color: #6a1b9a;
+    color: rgb(231, 231, 231);
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #8e24aa;
+}
+
+.delete-button {
+    color: #e53935;
+}
+
+/* Add extra margin for the 'Add New Product' button */
+.add-product-button {
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: #0905fa;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-top: 1% !important;
+}
+
+.add-product-button:hover {
+    background-color: #039be5;
+}
