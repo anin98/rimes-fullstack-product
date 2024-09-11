@@ -99,7 +99,7 @@
 }
 
 .delete-button {
-    color: #e53935;
+    color: #e53935 !important;
 }
 
 /* Add extra margin for the 'Add New Product' button */
