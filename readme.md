@@ -58,7 +58,7 @@ The goal of this project is to build a simple Product Management system with:
 
 2. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/anin98/rimes-fullstack-product.git
    cd product_project
    ```
 
